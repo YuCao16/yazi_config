@@ -1,6 +1,18 @@
 [manager]
 ratio = [1, 2, 3]
+linemode = "size_and_mtime"
 
 [preview]
 max_width = 30000
-max_height = 30000
+# max_height = 3000
+
+[plugin]
+prepend_previewers = [
+	# Archive previewer
+	{ mime = "application/*zip",            run = "ouch" },
+	{ mime = "application/x-tar",           run = "ouch" },
+	{ mime = "application/x-bzip2",         run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar",           run = "ouch" },
+	{ mime = "application/x-xz",            run = "ouch" },
+]
