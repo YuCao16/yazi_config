@@ -1,4 +1,24 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "T"
-run  = "plugin --sync max-preview"
+run  = "plugin toggle-pane max-preview"
 desc = "Maximize or restore preview"
+
+[[mgr.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+desc = "Jump to char"
+
+[[mgr.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart filter"
+
+[[mgr.prepend_keymap]]
+on   = "q"
+run  = "quit --no-cwd-file"
+desc = "Quit without cd"
+
+[[mgr.prepend_keymap]]
+on   = "Q"
+run  = "quit"
+desc = "Quit and cd to current dir"

@@ -1,0 +1,6 @@
+# Plugins are managed by `ya pkg` via package.toml.
+# Run `ya pkg install` after cloning to install them.
+plugins/
+
+# Yazi auto-creates timestamped backups when config parsing fails.
+*.toml-[0-9]*

@@ -1,5 +1,37 @@
-[plugin]
-deps = [{ use = "yazi-rs/plugins#max-preview", commit = "06e5fe1" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "4ffa48f"
+hash = "9c7987da2d2a2120dac33abb64132004"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "406ce6c"
+hash = "f5afc904d5106ee368c8aa2ded43bd74"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "4ffa48f"
+hash = "6849444b7c2df08eace83f3f86fb55a3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "4ffa48f"
+hash = "2678c84a0b3a0b22504e918ccaf99011"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "4ffa48f"
+hash = "7a4b4237223aaa94e589d1c01a23542a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "4ffa48f"
+hash = "eff8ff12fa4e5f035a10d8aeeb4c258d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "4ffa48f"
+hash = "c887903a63a2ff520081b6d90a4b3392"
 
 [flavor]
 deps = []

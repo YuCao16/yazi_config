@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 ratio = [1, 2, 3]
 linemode = "size_and_mtime"
 
@@ -16,3 +16,31 @@ prepend_previewers = [
 	{ mime = "application/x-rar",           run = "ouch" },
 	{ mime = "application/x-xz",            run = "ouch" },
 ]
+
+# git.yazi: show git status as linemode
+[[plugin.prepend_fetchers]]
+id    = "git"
+url   = "*"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+id    = "git"
+url   = "*/"
+run   = "git"
+group = "git"
+
+# mime-ext.yazi: faster mime detection via extension database
+[[plugin.prepend_fetchers]]
+id    = "mime"
+url   = "local://*"
+run   = "mime-ext.local"
+prio  = "high"
+group = "mime"
+
+[[plugin.prepend_fetchers]]
+id    = "mime"
+url   = "remote://*"
+run   = "mime-ext.remote"
+prio  = "high"
+group = "mime"
