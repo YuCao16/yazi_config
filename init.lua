@@ -1,5 +1,13 @@
 require("git"):setup { order = 1500 }
 require("full-border"):setup()
+require("mime-ext.local"):setup {
+	with_exts = {
+		out = "text/plain",
+		err = "text/plain",
+		log = "text/plain",
+	},
+	fallback_file1 = true,
+}
 
 function Linemode:size_and_mtime()
 	local time = math.floor(self._file.cha.mtime or 0)
