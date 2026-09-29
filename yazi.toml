@@ -3,6 +3,7 @@ ratio = [1, 2, 3]
 linemode = "size_and_mtime"
 
 [preview]
+max_height = 2400
 max_width = 30000
 # max_height = 3000
 
@@ -44,3 +45,8 @@ url   = "remote://*"
 run   = "mime-ext.remote"
 prio  = "high"
 group = "mime"
+
+[opener]
+edit = [
+  { run = "${EDITOR:-vim} %s", desc = "edit", for = "unix", block = true },
+]
